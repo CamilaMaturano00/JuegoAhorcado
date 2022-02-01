@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <head>
+        <h1> AHORCADO </h1>
+        <button class="btn-jugar" id="jugar"> Jugar </button>
+    </head>
+    <main>
+        <section class="conteiner">
+            <div> 
+                <button class="btn btn-iniciar" id="iniciar">Iniciar Juego</button>
+            </div>
+            <div>
+                <input class="text-input" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
+                <button class="btn btn-agregar" id="agregar"> AGREGAR PALABRA</button>
+            </div>
+        </section>
+        <section class="juego">
+            <textarea name="error-letra" id="letras" cols="30" rows="10" placeholder="Letras que no conforman la palabra" readonly></textarea>
+        </section>
+    </main>
+</body>
+</html>
