@@ -4,26 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Ahorcado</title>
+
 </head>
 <body>
     <head>
         <h1> AHORCADO </h1>
-        <button class="btn-jugar" id="jugar"> Jugar </button>
     </head>
-    <main>
-        <section class="conteiner">
+    <main onkeypress="return validarSiEsLetra(event);" >
+        <section class="conteiner-tablero" >
             <div> 
-                <button class="btn btn-iniciar" id="iniciar">Iniciar Juego</button>
+                <button  class="btn btn-iniciar" id="iniciar" style="display: flex;"  onclick="mostrarTablero();">Iniciar
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                </button>
+
             </div>
             <div>
-                <input class="text-input" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
-                <button class="btn btn-agregar" id="agregar"> AGREGAR PALABRA</button>
+                <input class="text-input" type="text" id="nuevaPalabra" placeholder="  Nueva palabra" style="display: inline">
+                <button class="btn btn-agregar" id="agregar" style="display: inline"> AGREGAR PALABRA
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>  
+                </button>
+            </div>
+            <div> 
+                <button class="btn btn-reiniciar" id="reiniciar" style="display: none;">Volver
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </section>
-        <section class="juego">
-            <textarea name="error-letra" id="letras" cols="30" rows="10" placeholder="Letras que no conforman la palabra" readonly></textarea>
+        <img src="img/horca1.png" id="imagen" style="display: flex;" >
+        <section class="juego ">
+            <textarea name="error-letra" id="letras" cols="30" rows="10" style="display: none;"readonly></textarea>
+        </section>
+        <section class="conteiner" id="tablero"  style="display: none;"> 
+            <div >
+                <canvas width="450" height="500">
+                </canvas>
+            </div>
+            <div>
+                <p class="output" > </p>
+            </div>
         </section>
     </main>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/camila-maturano/" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/CamilaMaturano00" class="social-media-icon" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+            <p class="copyright">Camila Maturano © 2022</p>
+        </footer>
+    </div>
+    <script src="js/tablero.js"></script>
+    <script src="js/palabraSecreta.js"></script>
+    <script src="js/teclasPulsadas.js"></script>
+    <script src="js/validar.js"></script>
+    <script src="js/mostrarTablero.js"></script>
+
 </body>
 </html>
