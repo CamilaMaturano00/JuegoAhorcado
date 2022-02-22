@@ -7,7 +7,7 @@ var campoLetrasIncorrectas = document.querySelector("#letras");
 var tablero = document.querySelector("canvas") ;
 var pincel = tablero.getContext("2d");
 //variables declaradas
-var palabrasSecretas = ["JAVA"];
+var palabrasSecretas = ["ARGENTINA","JAVASCRIPT","HTML","CSS","ALURA","BRASIL","PERU","URUGUAY","CHILE","BOLIVIA",""];
 var palabra = "" ;
 var palabraGuiones ;
 var intento = 0;
