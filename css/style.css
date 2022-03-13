@@ -9,12 +9,9 @@ body {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   
 }
-p{
-  color: white;
-}
-img{margin-top: 9px;
-  margin-left: 300px;
-  align-self:center;
+#imagen{
+  margin-left: auto;
+  margin-right: auto;
 }
 h1{
   background: #c501e2;
@@ -52,7 +49,6 @@ color: white
 
 }
 .text-input{
-
   border-radius: 10px;
   background: #000000;
   color: #ff0534;
@@ -77,14 +73,14 @@ button{
     position: relative;
     display: inline-block;
     padding: 25px 30px;
-    margin: 40px 0;
+    margin-left:auto ;
+    margin-right: auto;
     color: #03e9f4;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 50px;
    background-color: #050801;
    font-weight: bold;
 }
@@ -181,46 +177,108 @@ button span:nth-child(4){
 }
 
 .footer-basic {
-margin-top: 100px;
-  padding: 5px 0;
-  background-color:#efefef;
-  color:#4b4c4d;
-  height: 125px;
-
+  margin-top: 50px;
+  background-color:#000;
+  height: 90px;
 }
 
 .footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
+text-align:center;
+padding-bottom: 5px;
 }
 
 .footer-basic .social > a {
-  font-size:20px;
-  width: 35px;
-  height: 35px;
-  line-height: 40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid rgb(0, 0, 0);
-  margin: 8px;
-  color:inherit;
-  opacity:0.95;
+font-size:30px;
+width: 55px;
+height: 55px;
+line-height: 55px;
+display:inline-block;
+border-radius:50%;
+margin: 10px;
+color:inherit;
+opacity:0.95;
+color: white;
+border: 2px solid white;
 }
-
+#linkedin{
+  background: #1976D2 ;
+}
+#github{
+  background: #000000 ;
+  
+}
 .footer-basic .social > a:hover {
-  color: #01c4e7;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .copyright {
-  text-align:center;
-  font-size:18px;
-  color:rgb(0, 0, 0);
+font-size: 25px;
+font-weight: bold;
+padding-bottom: 10px;
+padding-top: 10px;
+display:inline-block;
+color:rgb(255, 255, 255);
 }
 /*footer{
   background-color: #364552;
   color: white;
   padding: 20px;
   height: 90px;
+}*/
+@media screen and (max-width: 500px){
+  h1{
+    margin-top: 50px;
+    width: auto;
+  }
+
+  #imagen{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 350px;
+  }
+  #tablero{
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 55px;
+    background-color: #2ef8a0 ;
+    width: 350px;
+    height: auto;
+  }
+  canvas{
+    width: 300px;
+    height: 420px;
+  }
+  textarea{
+    width: 400px;
+  }a
+  .output{
+    border: 3px solid rgb(117, 55, 10);
+    width: 400px;
+  }
+  .footer-basic{
+    width: auto;
+    height: auto;
+  }
+  .btn-iniciar{
+    margin-left: 70px;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .btn-agregar{
+    margin-left: 10px;
+  }
+  .text-input{
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  .conteiner-tablero{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

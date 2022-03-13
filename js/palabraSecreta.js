@@ -24,7 +24,9 @@ console.log(palabrasSecretas)
 function iniciarJuego(){
     palabraAleatoria();
     dibujarLineas();
-    window.addEventListener("keydown",verificarLetraIngresada);
+     window.addEventListener("keydown",verificarLetraIngresada);   
+    
+    
 }
 //Funcion para añadir palabras a la lista
 function agregarPalabra(){

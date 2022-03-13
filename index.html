@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -25,9 +26,8 @@
                 <span></span>
                 <span></span>
                 </button>
-
             </div>
-            <div>
+            <div class="agregar">
                 <input class="text-input" type="text" id="nuevaPalabra" placeholder="  Nueva palabra" style="display: inline">
                 <button class="btn btn-agregar" id="agregar" style="display: inline"> AGREGAR PALABRA
                     <span></span>
@@ -62,14 +62,14 @@
     <div class="footer-basic">
         <footer>
             <div class="social">
-                <a href="https://www.linkedin.com/in/camila-maturano/" class="social-media-icon" target="_blank">
+                <p class="copyright">Camila Maturano © 2022</p>
+                <a href="https://www.linkedin.com/in/camila-maturano/" class="social-media-icon" id="linkedin" target="_blank">
                     <i class='bx bxl-linkedin'></i>
                 </a>
-                <a href="https://github.com/CamilaMaturano00" class="social-media-icon" target="_blank">
+                <a href="https://github.com/CamilaMaturano00" class="social-media-icon" id="github" target="_blank">
                     <i class='bx bxl-github'></i>
                 </a>
             </div>
-            <p class="copyright">Camila Maturano © 2022</p>
         </footer>
     </div>
     <script src="js/tablero.js"></script>
