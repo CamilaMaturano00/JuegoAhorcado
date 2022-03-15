@@ -5,4 +5,5 @@ function mostrarTablero(){
     document.querySelector("#imagen").style.display = 'none';
     document.querySelector("#agregar").style.display = 'none';
     document.querySelector("#nuevaPalabra").style.display = 'none';
+    document.querySelector("#iniciar").textContent = "Reiniciar"
 }
