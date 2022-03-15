@@ -39,14 +39,12 @@ h1{
 p{
 color: white
 }
-.conteiner-tablero{
-  display: flex;
-  justify-content: space-evenly;
-  align-items:flex-start;
-  flex-wrap: wrap;
-  font-size: 55px;
-  margin: 30px;
-
+.contenedor-btn{
+  width: 100%;
+  display: inline-flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 40px;
 }
 .text-input{
   border-radius: 10px;
@@ -55,6 +53,8 @@ color: white
   font-size: 25px;
   width: 200px;
   height: 70px;
+  margin-left: 100px;
+  margin-right: 5px;
 }
 textarea{
   border-radius: 10px;
@@ -70,19 +70,18 @@ textarea{
 }
 button{
   border-radius: 10px;
-    position: relative;
-    display: inline-block;
-    padding: 25px 30px;
-    margin-left:auto ;
-    margin-right: auto;
-    color: #03e9f4;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    overflow: hidden;
-   background-color: #050801;
-   font-weight: bold;
+  position: relative;
+  padding: 25px 30px;
+  margin-left: 30px ;
+  margin-right: auto;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background-color: #050801;
+  font-weight: bold;
 }
 button:hover{
     background: #03e9f4;
@@ -229,21 +228,17 @@ padding-top: 10px;
 display:inline-block;
 color:rgb(255, 255, 255);
 }
-/*footer{
-  background-color: #364552;
-  color: white;
-  padding: 20px;
-  height: 90px;
-}*/
+
 @media screen and (max-width: 500px){
   h1{
     margin-top: 50px;
     width: auto;
   }
-
-  #imagen{
+  #imagen, .footer-basic, .contenedor-btn {
     margin-left: auto;
     margin-right: auto;
+  }
+  #imagen{
     width: 400px;
     height: 350px;
   }
@@ -263,33 +258,34 @@ color:rgb(255, 255, 255);
   }
   textarea{
     width: 400px;
-  }a
-  .output{
+  }
+  a .output{
     border: 3px solid rgb(117, 55, 10);
     width: 400px;
   }
-  .footer-basic{
-    width: auto;
-    height: auto;
-  }
+
   .btn-iniciar{
-    margin-left: 70px;
+    width: 100%;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
   }
 
   .btn-agregar{
-    margin-left: 10px;
+    width: 100%;
+    margin-left: auto;
+  }
+  .btn-reiniciar{
+    margin-left: 0;
+    width: 100%;
   }
   .text-input{
-    margin-left: 40px;
-    margin-bottom: 20px;
-  }
-  .conteiner-tablero{
-    width: 300px;
-    display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 20px;
+    width: 100%;
   }
-  
+  .contenedor-btn{
+    width: 250px;
+    display: block;
+  }
 }

@@ -19,31 +19,34 @@
     </head>
     <main onkeypress="return validarSiEsLetra(event);" >
         <section class="conteiner-tablero" >
-            <div> 
-                <button  class="btn btn-iniciar" id="iniciar" style="display: flex;"  onclick="mostrarTablero();">Iniciar
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                </button>
+            <div class="contenedor-btn">
+                <div> 
+                    <button  class="btn btn-iniciar" id="iniciar"   onclick="mostrarTablero();">Iniciar
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </button>
+                </div>
+                <div class="agregar">
+                    <input class="text-input" type="text" id="nuevaPalabra" placeholder="  Nueva palabra">
+                    <button class="btn btn-agregar" id="agregar" > AGREGAR PALABRA
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>  
+                    </button>
+                </div>
+                <div> 
+                    <button class="btn btn-reiniciar" id="reiniciar" style="display: none;">Volver
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
-            <div class="agregar">
-                <input class="text-input" type="text" id="nuevaPalabra" placeholder="  Nueva palabra" style="display: inline">
-                <button class="btn btn-agregar" id="agregar" style="display: inline"> AGREGAR PALABRA
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>  
-                </button>
-            </div>
-            <div> 
-                <button class="btn btn-reiniciar" id="reiniciar" style="display: none;">Volver
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+           
         </section>
         <img src="img/horca1.png" id="imagen" style="display: flex;" >
         <section class="juego ">

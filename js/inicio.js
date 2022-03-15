@@ -26,7 +26,8 @@ botonIniciar.addEventListener("click",function(event){
     intento = 0;
     palabraAleatoria();
     dibujarLineas();
-    campoLetrasIncorrectas.textContent = "";
+    campoLetrasIncorrectas.textContent = " ";
+    letrasInvalidas= [];
 });
 subcontenedor.addEventListener("click", function (event) {
     if (iniciarJuego) {
