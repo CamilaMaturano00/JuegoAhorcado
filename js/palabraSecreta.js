@@ -1,6 +1,8 @@
 //Botones
 var botonAgregar = document.querySelector("#agregar");
 var botonIniciar = document.querySelector("#iniciar");
+var inputInvisible = document.querySelector("#input-teclado");
+var subcontenedor = document.querySelector("#subcontenedor");
 //Campos
 var palabraNueva = document.querySelector("#nuevaPalabra");
 var campoLetrasIncorrectas = document.querySelector("#letras");
