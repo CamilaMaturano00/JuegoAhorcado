@@ -36,9 +36,6 @@ h1{
   height: 500px;
   margin: auto;
 }
-p{
-color: white
-}
 .contenedor-btn{
   width: 100%;
   display: inline-flex;
@@ -55,6 +52,14 @@ color: white
   height: 70px;
   margin-left: 100px;
   margin-right: 5px;
+}
+.ocultar {
+  opacity: 0;
+}
+.agrega{
+  font-size: 35px;
+  text-align: center;
+  color: rgb(170, 13, 13);
 }
 textarea{
   border-radius: 10px;

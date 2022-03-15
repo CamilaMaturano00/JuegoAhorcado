@@ -2,6 +2,7 @@ var botonAgregar = document.querySelector("#agregar");
 var botonIniciar = document.querySelector("#iniciar");
 var inputInvisible = document.querySelector("#input-teclado");
 var subcontenedor = document.querySelector("#tablero");
+var pOculto = document.querySelector(".agrega")
 //Campos
 var palabraNueva = document.querySelector("#nuevaPalabra");
 var campoLetrasIncorrectas = document.querySelector("#letras");
@@ -35,14 +36,20 @@ subcontenedor.addEventListener("click", function (event) {
         inputInvisible.focus();
     }
 });
+botonAgregar.addEventListener("click", agregarPalabra);
 //Funcion para añadir palabras a la lista
 function agregarPalabra(){
     if(palabraNueva.value.length > 0){
     palabrasSecretas.push(palabraNueva.value.toUpperCase());
-    palabraNueva.value = ""
+    palabraNueva.value = "";
     console.log(palabrasSecretas);
+    pOculto.innerHTML = "¡Palabra Agregada Correctamente!";
+    setTimeout(function(){
+            pOculto.innerHTML = "";
+        }, 2000);
     }
 }
+
 //Eleccion aleatoria de una palabra
 function palabraAleatoria(){
     palabra = palabrasSecretas[Math.floor(Math.random()*palabrasSecretas.length)];
