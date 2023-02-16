@@ -6,31 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/buttons.css">}
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Ahorcado</title>
-
 </head>
 <body>
     <head>
         <h1> AHORCADO </h1>
     </head>
-    <main onkeypress="return validarSiEsLetra(event);" >
-        <section class="conteiner-tablero" >
-            <div class="contenedor-btn">
+    <div onkeypress="return validarSiEsLetra(event);" >
+            <div class="btns">
                 <div> 
-                    <button  class="btn btn-iniciar" id="iniciar"   onclick="mostrarTablero();">Iniciar
+                    <button  class="btn btn-iniciar" id="iniciar"   onclick="mostrarTablero();">INICIAR
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     </button>
                 </div>
+                <div>
+                    <input class="text-input" type="text" id="nuevaPalabra" placeholder=" Nueva palabra">
+                </div>
                 <div class="agregar">
-                    <input class="text-input" type="text" id="nuevaPalabra" placeholder="  Nueva palabra">
-                    <button class="btn btn-agregar" id="agregar" > AGREGAR PALABRA
+                    <button class="btn btn-agregar" id="agregar" >AGREGAR
                         <span></span>
                         <span></span>
                         <span></span>
@@ -38,7 +40,7 @@
                     </button>
                 </div>
                 <div> 
-                    <button class="btn btn-reiniciar" id="reiniciar" style="display: none;">Volver
+                    <button class="btn btn-reiniciar" id="reiniciar" style="display: none;">VOLVER
                         <span></span>
                         <span></span>
                         <span></span>
@@ -47,39 +49,25 @@
                 </div>
             </div>
            <p class="agrega"></p>
-        </section>
         <img src="img/horca1.png" id="imagen" style="display: flex;" >
-        <section class="juego ">
-            <textarea name="error-letra" id="letras" cols="30" rows="10" style="display: none;"readonly></textarea>
-        </section>
-        <section class="conteiner" id="tablero"  style="display: none;"> 
+        <div class="juego ">
+            <textarea class="visor-letras" name="error-letra" id="letras" cols="30" rows="10" style="display: none;"readonly></textarea>
+        </div>
+        <div class="tablero" id="tablero"  style="display: none;"> 
             <div >
                 <canvas width="450" height="500">
                 </canvas>
                 <input id="input-teclado">
             </div>
             <div>
-                <p class="output" > </p>
+                <p class="output" ></p>
             </div>
-        </section>
-    </main>
-    <div class="footer-basic">
-        <footer>
-            <div class="social">
-                <p class="copyright">Camila Maturano © 2022</p>
-                <a href="https://www.linkedin.com/in/camila-maturano/" class="social-media-icon" id="linkedin" target="_blank">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-                <a href="https://github.com/CamilaMaturano00" class="social-media-icon" id="github" target="_blank">
-                    <i class='bx bxl-github'></i>
-                </a>
-            </div>
-        </footer>
+        </div>
     </div>
+
     <script src="js/tablero.js"></script>
     <script src="js/inicio.js"></script>
     <script src="js/validar.js"></script>
     <script src="js/mostrarTablero.js"></script>
-
 </body>
 </html>

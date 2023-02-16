@@ -1,18 +1,17 @@
+/* Importo fuentes desde fonts google*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body {
   font-family: 'Bebas Neue', cursive;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  
 }
+
 #imagen{
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
+
 h1{
   background: #c501e2;
   border-radius: 30px 30px 30px 30px;
@@ -22,10 +21,10 @@ h1{
   text-align: center; 
   text-transform: uppercase;
   padding: 6px;
-  margin: 35px;
-
+  margin: 0px 35px;
 }
-#tablero{
+
+.tablero{
   border-radius: 10px;
   justify-content: space-evenly;
   align-items: center;
@@ -36,32 +35,30 @@ h1{
   height: 500px;
   margin: auto;
 }
-.contenedor-btn{
+
+.btns{
   width: 100%;
-  display: inline-flex;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 40px;
+  display: flex;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-around;
 }
+
 .text-input{
+  text-align: center;
   border-radius: 10px;
   background: #000000;
   color: #ff0534;
   font-size: 25px;
-  width: 200px;
+  width: 280px;
   height: 70px;
-  margin-left: 100px;
-  margin-right: 5px;
 }
+
 .ocultar {
   opacity: 0;
 }
-.agrega{
-  font-size: 35px;
-  text-align: center;
-  color: rgb(170, 13, 13);
-}
-textarea{
+
+.visor-letras{
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -73,112 +70,7 @@ textarea{
   color: #ff0534;
   margin-bottom: 10px;
 }
-button{
-  border-radius: 10px;
-  position: relative;
-  padding: 25px 30px;
-  margin-left: 30px ;
-  margin-right: auto;
-  color: #03e9f4;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.5s;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background-color: #050801;
-  font-weight: bold;
-}
-button:hover{
-    background: #03e9f4;
-    color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-}
-.btn-reiniciar:nth-child(1){
-  filter: hue-rotate(270deg);
-}
-button:nth-child(2):nth-child(2){
-  filter: hue-rotate(200deg);
-}
-button:nth-child(3){
-  filter: hue-rotate(300deg);
-}
-button span{
-    position: absolute;
-    display: block;
-}
-button span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#03e9f4);
-    animation: animate1 1s linear infinite;
-}
-@keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
-}
-button span:nth-child(2){
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg,transparent,#03e9f4);
-  animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
-}
-@keyframes animate2{
-  0%{
-      top: -100%;
-  }
-  50%,100%{
-      top: 100%;
-  }
-}
-button span:nth-child(3){
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg,transparent,#03e9f4);
-  animation: animate3 1s linear infinite;
-  animation-delay: 0.50s;
-}
-@keyframes animate3{
-  0%{
-      right: -100%;
-  }
-  50%,100%{
-      right: 100%;
-  }
-}
 
-
-button span:nth-child(4){
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg,transparent,#03e9f4);
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
-}
-@keyframes animate4{
-  0%{
-      bottom: -100%;
-  }
-  50%,100%{
-      bottom: 100%;
-  }
-}
 #input-teclado {
   width: 0px;
   height: 0px;
@@ -188,109 +80,4 @@ button span:nth-child(4){
   margin: 0px;
   padding: 0px;
   outline: none;
-}
-
-.footer-basic {
-  margin-top: 50px;
-  background-color:#000;
-  height: 90px;
-}
-
-.footer-basic .social {
-text-align:center;
-padding-bottom: 5px;
-}
-
-.footer-basic .social > a {
-font-size:30px;
-width: 55px;
-height: 55px;
-line-height: 55px;
-display:inline-block;
-border-radius:50%;
-margin: 10px;
-color:inherit;
-opacity:0.95;
-color: white;
-border: 2px solid white;
-}
-#linkedin{
-  background: #1976D2 ;
-}
-#github{
-  background: #000000 ;
-  
-}
-.footer-basic .social > a:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.copyright {
-font-size: 25px;
-font-weight: bold;
-padding-bottom: 10px;
-padding-top: 10px;
-display:inline-block;
-color:rgb(255, 255, 255);
-}
-
-@media screen and (max-width: 500px){
-  h1{
-    margin-top: 50px;
-    width: auto;
-  }
-  #imagen, .footer-basic, .contenedor-btn {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #imagen{
-    width: 400px;
-    height: 350px;
-  }
-  #tablero{
-    border-radius: 10px;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 55px;
-    background-color: #2ef8a0 ;
-    width: 350px;
-    height: auto;
-  }
-  canvas{
-    width: 300px;
-    height: 420px;
-  }
-  textarea{
-    width: 400px;
-  }
-  a .output{
-    border: 3px solid rgb(117, 55, 10);
-    width: 400px;
-  }
-
-  .btn-iniciar{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-
-  .btn-agregar{
-    width: 100%;
-    margin-left: auto;
-  }
-  .btn-reiniciar{
-    margin-left: 0;
-    width: 100%;
-  }
-  .text-input{
-    margin-left: auto;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  .contenedor-btn{
-    width: 250px;
-    display: block;
-  }
 }

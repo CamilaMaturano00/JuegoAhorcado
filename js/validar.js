@@ -1,3 +1,4 @@
+//Validacion para permitir solo letras
 function validarSiEsLetra(e){
     var key = e.keyCode || e.which;
     var tecla = String.fromCharCode(key).toLowerCase();

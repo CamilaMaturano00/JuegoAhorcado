@@ -1,3 +1,4 @@
+//Utilizo canva para dibujar el muñeco
 var botonJugar = document.querySelector("#iniciar");
 
 var botonReiniciar = document.querySelector("#reiniciar");
